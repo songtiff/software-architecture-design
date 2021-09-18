@@ -1,0 +1,38 @@
+Figure out the structure of the program first.
+Classes: Address, Person, Student, Professors, Course, Enroll (keep track of grades/if course meets minimum requirement)
+
+Address
+- country : string
+- state : string
+- city : string
+- street address : string
+- postal code : string
+
+Person (represents shared student/professor attribute)
+- firstName : string
+- lastName : string
+- dateOfBirth : date
+- phoneNumber : string
+
+Specific Class Information.
+Student
+- international : boolean (local student or not)
+- method isPartTime() : boolean (look at # of courses to determine student status)
+- method isOnProbation() : boolean
+
+Professors
+- salary : float
+
+Course
+- name : string
+- code : string
+- minStudents : int 
+- maxStudents : int
+- starat : date
+- end : date
+- method isCancelled : boolean (whether # of students meet minimum requirement)
+
+Enroll
+- date : date
+- grade : float
+
