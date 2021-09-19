@@ -1,5 +1,5 @@
 from person import Person
-from enroll import Enroll
+from enrolled import Enroll
 
 class Student(Person): #student inherits from person 
     def __init__(self, first, last, dob, phone, address, international=False):
@@ -17,4 +17,4 @@ class Student(Person): #student inherits from person
         return False
 
     def is_part_time(self):
-        return False
+        return len(self.enrolled) <= 3
